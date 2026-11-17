@@ -1,0 +1,35 @@
+{
+  "name": "forex-quotes",
+  "version": "0.0.1",
+  "description": "Realtime forex quote API client. A deliberately flaky fake: no network calls, simulated latency and failures.",
+  "license": "MIT",
+  "main": "./index.js",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.mjs",
+    "src",
+    "README.md",
+    "LICENSE.md"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "forex",
+    "currency",
+    "exchange-rate"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.12"
+  }
+}
